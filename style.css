@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: #FF7979;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    background-size: cover;
+}
+
+h1{
+    width: 525px;
+    height: 131px;
+    color: white;
+    font-size: 50px;
+    line-height: 55px; 
+    letter-spacing: -0.521px;
+    margin-bottom:15px;
+}
+
+h2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; 
+    margin-top: 0;
+}
+
+.right-cntr_header{
+    width: 540px;
+    height: 60px;
+    border-radius: 10px;
+    background: #5E54A4;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.268px;
+}
+
+.left-cntr{
+    width: 525px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-cntr{
+    height: auto;
+    max-height:562px;
+    width: 460px;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+   
+}
+
+button{
+    width: 460px;
+    height: 56px;
+    border-radius: 5px;
+    background: #38CC8B;
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    border: none;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.right-cntr{
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.terms-and-services{
+    color: #BAB7D4;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 26px;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+input{
+    width: 396px;
+    height: 26px;
+    padding: 15px 32px;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+    color: #3D3B48;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px; 
+    letter-spacing: 0.25px;
+    margin-bottom: 20px;
+}
+
+input::placeholder{
+    opacity: 0.75;
+}
+
+input:focus{
+    border: 1px solid #5E54A4;
+    outline: none;
+    background-image: none;
+}
+
+button:hover{
+    background: #77E2B3;
+}
+button:active{
+    bottom:-2px;
+    box-shadow: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.error{
+    border: 2px solid #FF7979;
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position-x:409px;
+    background-position-y:center ;
+}
+
+.error-msg{
+    color: #FF7979;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 17px;
+    display: none;
+}
+
+@media (max-width:1120px){
+    .container{
+        flex-direction: column;
+    }
+    .body{
+        height: 100vh;
+    }
+
+    .right-cntr_header{
+        height: 88px;
+        width: 194px;
+        padding-left:66.5px ;
+        padding-right:66.5px ;
+        text-align: center;
+    }
+
+    .form-cntr{
+        width: 327px;
+        height: auto;
+    }
+    
+    input{
+        width: 228px;
+        padding-left: 19px;
+        margin-bottom: 16px;
+    }
+
+    .form-cntr{
+        width: 280px;
+        padding: 24px;
+    }
+
+    .terms-and-services{
+        line-height: 21px;
+        width: 249px;
+        padding-left: 15px;
+    }
+
+    button{
+        width: 279px;
+        height: 56px;
+    }
+
+    .left-cntr{
+        width: 327px;
+    }
+
+    body{
+        margin:8px;
+        height: auto;
+    }
+
+    h1,h2{
+        text-align: center;
+    }
+
+    h1{
+        width: 327px;
+        height: 80px;
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 3px;
+    }
+}
+
+@media(max-width:400px){
+    body{
+        background-image: url(images/bg-intro-mobile.png);
+        background-size: cover;
+    }
+}
